@@ -1,5 +1,5 @@
 {% set name = "ypywidgets" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cb97a82f115c516c9da27b460bc06fd15b24ab4b8f06689e69cf1a4ac7ba2572
+  sha256: 1fc2288fe1ed7bcc488d1b7cd93c1ad692fda9434e22a217ac1b775a0faa5183
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - hatchling
   run:
-    - python >=3.7
-    - comm >=0.1.2,<1
-    - y-py >=0.6.0,<1
-    - reacttrs >=0.1.2,<1
+    - python >=3.8
+    - comm >=0.1.4,<1
+    - pycrdt >=0.3.6,<1
+    - reacttrs >=0.1.4,<1
 
 test:
   imports:
