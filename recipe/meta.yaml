@@ -1,5 +1,5 @@
 {% set name = "ypywidgets" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 87cc842ece19817b21a5d1fc3e24fccde9512f8f84c27eadf55c645c88d56c9d
+  sha256: 2e7dd63dded3adf4cd17159bdd70b66a9d2cc2a0ed2f69d0906a15f4939016ed
 
 build:
   noarch: python
