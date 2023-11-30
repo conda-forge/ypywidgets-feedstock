@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - comm >=0.1.4,<1
-    - pycrdt >=0.3.6,<1
+    - pycrdt >=0.5.0,<0.6.0
     - reacttrs >=0.1.4,<1
 
 test:
