@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - comm >=0.1.4,<1
-    - pycrdt >=0.8.30,<0.9.0
+    - pycrdt >=0.9.0,<0.10.0
     - reacttrs >=0.2.1,<0.3.0
 
 test:
@@ -34,12 +34,12 @@ test:
     - pip check
 
 about:
-  home: https://github.com/davidbrochart/ypywidgets
+  home: https://github.com/QuantStack/ypywidgets
   summary: Y-based Jupyter widgets for Python
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  dev_url: https://github.com/davidbrochart/ypywidgets
+  dev_url: https://github.com/QuantStack/ypywidgets
 
 extra:
   recipe-maintainers:
