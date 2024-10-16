@@ -3,13 +3,13 @@ About ypywidgets-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ypywidgets-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/davidbrochart/ypywidgets
+Home: https://github.com/QuantStack/ypywidgets
 
 Package license: MIT
 
 Summary: Y-based Jupyter widgets for Python
 
-Development: https://github.com/davidbrochart/ypywidgets
+Development: https://github.com/QuantStack/ypywidgets
 
 Current build status
 ====================
