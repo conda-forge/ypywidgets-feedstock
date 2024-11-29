@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 78ee67a034fa7131197a5e42ba86c9e9428767a4176dc10e5cf6e4d409132c1e
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - comm >=0.1.4,<1
     - pycrdt >=0.9.0,<0.11.0
     - reacttrs >=0.2.1,<0.3.0
@@ -30,6 +30,7 @@ test:
     - ypywidgets
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
